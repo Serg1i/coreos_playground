@@ -18,7 +18,7 @@ ExecStart=/usr/bin/docker run --name %p-%i \
       -h %H \
       -p ${COREOS_PUBLIC_IPV4}:3000:3000 \
       -e INSTANCE=%p-%i \
-      rosskukulinski/angular-todo-rethinkdb
+      serg1i/angular-todoapp
 ExecStop=-/usr/bin/docker kill %p-%i
 ExecStop=-/usr/bin/docker rm %p-%i
 
