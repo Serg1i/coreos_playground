@@ -1,5 +1,4 @@
-FROM haproxy:1.5
-MAINTAINER Ross Kukulinski "ross@getyodlr.com"
+FROM haproxy:latest
 
 RUN apt-get -yqq update && apt-get -yqq install curl
 
